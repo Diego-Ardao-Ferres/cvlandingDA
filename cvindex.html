@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cvlandingDA — Diego Ardao</title>
+  <meta name="description" content="CV Landing — Diego Ardao, Doctor en Medicina, atleta olímpico - Analista en ciencia de datos" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Parallax background accents -->
+  <div class="parallax parallax-1" aria-hidden="true"></div>
+  <div class="parallax parallax-2" aria-hidden="true"></div>
+  <div class="parallax parallax-3" aria-hidden="true"></div>
+
+  <header class="container hero" id="top">
+    <div class="hero-left">
+      <!-- Intenta cargar imagen JPG; si no existe, muestra el PDF embebido -->
+      <picture>
+        <img src="./Assests/foto_cv_JJOO.jpg" alt="Foto de Diego Ardao" class="avatar" onerror="this.style.display='none';document.getElementById('avatar-pdf').style.display='block';" />
+      </picture>
+      <object id="avatar-pdf" data="./Assests/foto_cv_JJOO.pdf" type="application/pdf" class="avatar-pdf" aria-label="Foto en PDF" style="display:none;">
+        <!-- Fallback absoluto si no hay PDF ni JPG -->
+        <div class="avatar-fallback">Foto no disponible</div>
+      </object>
+    </div>
+
+    <div class="hero-right">
+      <h1>Diego Ardao</h1>
+      <p class="subtitle">Doctor en Medicina · Ciencia de Datos &amp; IA · Atleta Olímpico</p>
+
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:dardao.smc@gmail.com">tu.email@ejemplo.com</a></li>
+        <li><strong>Tel:</strong> <a href="tel:+59892421498">+598 XXX XXX XXX</a></li>
+        <li><strong>Ubicación:</strong> Montevideo, Uruguay</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diego-ardao-ferres4" target="_blank" rel="noopener">/in/diego-ardao-ferres4</a></li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn" href="./Assests/CV_7_2025.pdf" download>Descargar CV</a>
+        <a class="btn ghost" href="#about">Sobre mí</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About me -->
+    <section id="about" class="container section">
+      <h2>About me</h2>
+      <div class="section-card">
+        <p>Soy Diego Ardao, Doctor en Medicina y atleta olímpico, con una carrera marcada por la disciplina, el esfuerzo, el trabajo en equipo y la pasión.
+        Durante más de una década representé a Uruguay en el rugby de alto rendimiento, siendo capitán de la Selección Uruguaya de Rugby 7s y atleta olímpico en París 2024.</p>
+
+        <p>Mi experiencia en el deporte me permitió comprender el valor del liderazgo, la empatía y la toma de decisiones bajo presión —habilidades que hoy puedo trasladar a un ámbito profesional.</p>
+
+        <p>Tras años dedicados a la medicina y al deporte, descubrí un nuevo camino en mi carrera: la ciencia de datos y la inteligencia artificial. Actualmente curso el posgrado en Business Intelligence &amp; Data Science en la Universidad de Montevideo, donde busco integrar mi formación médica con el análisis de datos para ampliar mi perfil profesional y abrir nuevas oportunidades.</p>
+
+        <p>Por otro lado, en los últimos años me he involucrado en el desarrollo de proyectos vinculados a la inclusión social y la tecnología, combinando mi vocación por el servicio con una mirada analítica orientada al impacto real.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia profesional (solo lugar + fecha) -->
+    <section id="experience" class="container section">
+      <h2>Experiencia profesional</h2>
+      <div class="section-card">
+        <ul class="timeline simple">
+          <!-- Reemplaza con tus datos reales -->
+          <li><span class="when">2024–2025</span> — Laboratorio de Anatomía Patológica Overtech SA</li>
+          <li><span class="when">2022–2024</span> — Práctica Médica (varios centros)</li>
+          <li><span class="when">2014–2024</span> — Selección Uruguaya de Rugby 7s (Capitán)</li>
+          <li><span class="when">2025– actualidad</span> — Analista de Datos - PINDATA</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Voluntariado -->
+    <section id="volunteer" class="container section">
+      <h2>Voluntariado</h2>
+      <div class="section-card">
+        <ul class="timeline simple">
+          <!-- Reemplaza con tus datos reales -->
+          <li><span class="when">2023–2025</span> — Coordinadoor de Deporte Fundacion Fenix</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Estudios (ordenados por fecha: posgrado, Dr. Medicina, Christian Brothers College) -->
+    <section id="education" class="container section">
+      <h2>Educación</h2>
+      <div class="section-card">
+        <ul class="timeline">
+          <li>
+            <div class="row">
+              <div class="left">
+                <div class="title">Posgrado: Business Intelligence &amp; Data Science</div>
+                <div class="place">Universidad de Montevideo</div>
+              </div>
+              <div class="right">2025–en curso</div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="left">
+                <div class="title">Doctor en Medicina</div>
+                <div class="place">Universidad de la República</div>
+              </div>
+              <div class="right">Año de egreso</div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="left">
+                <div class="title">Christian Brothers College</div>
+                <div class="place">Montevideo</div>
+              </div>
+              <div class="right">Año</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certificado de inglés -->
+    <section id="english-cert" class="container section">
+      <h2>Certificado de inglés</h2>
+      <div class="section-card highlight">
+        <!-- Reemplaza con tu certificación real -->
+        <p><strong>Nivel:</strong> (ej. C1 Advanced / IELTS 7.5 / TOEFL iBT 100) — <strong>Año:</strong> 202X — <strong>Entidad:</strong> (Cambridge / IELTS / ETS)</p>
+      </div>
+    </section>
+
+    <!-- Contacto (en una sola línea) -->
+    <section id="contact" class="container section">
+      <h2>Contacto</h2>
+      <div class="section-card one-line-contact">
+        <p>
+          <span>✉️ <a href="mailto:dardao.smc@egmail.com">tu.email@ejemplo.com</a></span>
+          <span>📞 <a href="tel:+598XXXXXXXX">+598 XXX XXX XXX</a></span>
+          <span>📍 Montevideo, Uruguay</span>
+          <span>🔗 <a href="https://www.linkedin.com/in/diego-ardao-ferres4" target="_blank" rel="noopener">LinkedIn</a></span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Diego Ardao — cvlandingDA</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
